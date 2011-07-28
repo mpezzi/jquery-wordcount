@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>jQuery Word Count Plugin</title>
+  
+  <style type="text/css" media="screen">
+  
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      line-height: 20px;
+      color: #333;
+    }
+    
+    .form-item,
+    .form-buttons {
+      margin: 1em 0;
+    }
+    
+    .form-item label {
+      display: block;
+      font-weight: bold;
+    }
+    
+    .wordcount-status {
+      font-size: 11px;
+      font-weight: bold;
+      line-height: 16px;
+      color: #808080;
+    }
+    
+    .wordcount-min-good span.min,
+    .wordcount-max-good span.max {
+      color: #8AAC4E;
+    }
+
+    .wordcount-min-warning span.min,
+    .wordcount-max-warning span.max {
+      color: #F89509;
+    }
+
+    .wordcount-min-error span.min,
+    .wordcount-max-error span.max {
+      color: #F00903;
+      font-weight: bold;
+    }
+    
+  </style>
+  
+</head>
+
+<body>
+
+  <div id="container">
+    
+    <h1>jQuery Word Count Plugin</h1>
+    
+    <form method="post" action="">
+      <div class="form-item">
+        <label for="textarea">Text Area:</label>
+        <textarea id="textarea" class="wordcount" cols="50" rows="10"></textarea>
+      </div>
+      <div class="form-buttons">
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+    
+  </div>
+  
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../jquery.wordcount.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      $('.wordcount').wordcount({
+        min: 10,
+        max: 20
+      });
+    });
+  </script>
+
+</body>
+</html>
