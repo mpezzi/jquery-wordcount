@@ -143,7 +143,7 @@ $.fn.wordcount.defaults = {
   type: 'words',
   min: 0,
   max: 0,
-  disable: 'input:submit',
+  disable: 'input:submit, input:image',
   statusClass: 'wordcount-status',
   errorClass: 'wordcount-error',
   warningClass: 'wordcount-warning',
