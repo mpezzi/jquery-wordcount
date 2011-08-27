@@ -7,10 +7,6 @@
  * http://www.gnu.org/licenses/gpl.html
  * Requires: jQuery v1.4.2 or later
  */
-
- /**
-  * jQuery Word / Character Count Plugin.
-  */
 ;(function($){
 
 $.fn.wordcount = function(settings) {
